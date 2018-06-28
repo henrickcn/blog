@@ -13,6 +13,9 @@ return [
     '__pattern__' => [
         'name' => '\w+',
     ],
+    '[user]' => [
+        'login' => ['v1/admin/user/login','method'=>'post']
+    ],
     '[hello]'     => [
         ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
         ':name' => ['index/hello', ['method' => 'post']],
